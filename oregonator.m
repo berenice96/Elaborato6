@@ -1,7 +1,7 @@
-function yd = oregonator(q,e,g,f)
+function yd = oregonator(t,y,argin)
 
-yd(1,1) = (q*y(2)-y(1)*y(2)+y(1)*(1-y(1)))./e;
-yd(2,1) = (-q*y(2)-y(1)*y(2)+f*y(3))./g;
+yd(1,1) = (argin(1)*y(2)-y(1)*y(2)+y(1)*(1-y(1)))./argin(2);
+yd(2,1) = (-argin(1)*y(2)-y(1)*y(2)+argin(4)*y(3))./argin(3);
 yd(3,1) = y(1)-y(3);
 
 end
